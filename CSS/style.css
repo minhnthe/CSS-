@@ -6,9 +6,13 @@ body {
 header {
     background-color: aquamarine;
 }
-
+nav img {
+   width: 10%;
+}
 nav {
-    background-color: aqua;
+   display: inline-block;
+   width: 80%;
+   background-color: #ddd;
 }
 
 main {
@@ -20,10 +24,10 @@ footer {
     background-color: chartreuse;
 }
 
-li {
-    display: block;
-    width: 50%;
-}
+/* li {
+   display: block;
+   width: 100%;
+} */
 
 h1 {
     text-align: center;
@@ -33,4 +37,31 @@ h1 {
 
 p {
     line-height: 120%;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.grid img {
+   width: 100%;
+}
+.grid {
+   display: grid;
+   grid-template-columns: 40% 40%;
+   justify-content: center;
+   gap: 20px;
+}
+
+.skip-link:focus {
+    top: 10px;
 }
